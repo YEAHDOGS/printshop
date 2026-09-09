@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seat Gap Filler — DOGS Print Shop</title>
+<meta name="description" content="Parametric car seat gap filler wedge: size it to your car, print it yourself. Stops keys and phones falling between the seat and console.">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <p><a href="../index.html">← DOGS Print Shop</a></p>
+    <h1 class="wordmark">Seat Gap Filler</h1>
+    <p class="tagline">The wedge that ends the seat-crack abyss.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="intro">
+    <p>Born in a car on the way to Prosper, Texas: everything falls out of
+    your pockets into the gap between the seat and the center console. This
+    parametric wedge fills that gap — sized to <em>your</em> car, not
+    one-size-fits-most.</p>
+    <div class="note">
+      <strong>Status:</strong> STL in development. The parametric OpenSCAD
+      source is in the repo (<code>assets/seat-gap-filler.scad</code>) —
+      length, widths, height, and taper are all adjustable.
+    </div>
+  </section>
+
+  <section class="specs">
+    <h2>Specs</h2>
+    <dl>
+      <dt>Default size</dt><dd>410 × 60 × 35 mm (tapers to 22 mm at the base)</dd>
+      <dt>Print strategy</dt><dd>Split into front/back halves with alignment pins — fits a 220 mm bed</dd>
+      <dt>Material</dt><dd>PETG or ASA recommended (PLA softens in a hot car)</dd>
+      <dt>Source file</dt><dd><a href="https://github.com/YEAHDOGS/printshop/blob/jack/printshop-scaffold-20260909/assets/seat-gap-filler.scad">seat-gap-filler.scad</a></dd>
+    </dl>
+  </section>
+
+  <section class="specs">
+    <h2>Why an STL, not a physical product?</h2>
+    <p>Amazon sells injection-molded foam pairs for $10–17. A 15-hour
+    two-piece rigid print can't beat that on price or feel. The STL wins by
+    being <em>parametric</em> — your exact gap, your exact car. Read the full
+    research: <a href="https://github.com/YEAHDOGS/printshop/blob/jack/printshop-scaffold-20260909/docs/research/seat-gap-filler.md">seat-gap-filler.md</a>.</p>
+  </section>
+
+  <footer>
+    <p>DOGS Print Shop — a YEAHDOGS thing. <a href="https://github.com/YEAHDOGS/printshop">GitHub</a></p>
+  </footer>
+</main>
+</body>
+</html>
