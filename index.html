@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOGS Print Shop — Parts your car forgot</title>
+<meta name="description" content="Parametric 3D-printable files designed from real-life annoyances. First up: a seat gap filler sized to your exact car. Buy the file, print anywhere.">
+<meta property="og:title" content="DOGS Print Shop — Parts your car forgot">
+<meta property="og:description" content="Parametric files. Your exact gap. First up: a car seat gap filler.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yeahdogs.github.io/printshop/">
+<meta property="og:image" content="https://yeahdogs.github.io/printshop/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<main id="main" class="snap">
+
+  <!-- 01 HERO -->
+  <section class="panel hero" aria-label="DOGS Print Shop">
+    <div class="bg parallax" aria-hidden="true">
+      <img src="assets/hero-print.jpg" alt="" fetchpriority="high">
+      <div class="scrim"></div>
+    </div>
+    <div class="copy corner-bl">
+      <p class="kicker reveal">DOGS Print Shop</p>
+      <h1 class="word reveal" style="--d:.05s">PRINT</h1>
+      <p class="line reveal" style="--d:.12s">Parts your car forgot.</p>
+      <p class="sub reveal" style="--d:.18s">Parametric files, sized to your exact gap. Buy the file. Print anywhere.</p>
+      <p class="reveal" style="--d:.24s"><a class="btn" href="#wedge">See the wedge</a></p>
+    </div>
+    <p class="hint" aria-hidden="true">scroll</p>
+  </section>
+
+  <!-- 02 ABYSS -->
+  <section class="panel abyss" aria-label="The problem">
+    <div class="bg parallax" aria-hidden="true">
+      <img src="assets/wedge-detail.jpg" alt="" loading="lazy">
+      <div class="scrim heavy"></div>
+    </div>
+    <div class="copy corner-tr">
+      <h2 class="word reveal">ABYSS</h2>
+      <p class="line reveal" style="--d:.12s">The seat crack eats your keys.</p>
+      <p class="sub reveal" style="--d:.18s">Phone. Wallet. Change. Gone down the gap between seat and console.</p>
+    </div>
+  </section>
+
+  <!-- 03 WEDGE -->
+  <section id="wedge" class="panel wedge" aria-label="Product 01: Seat Gap Filler">
+    <div class="copy corner-tl">
+      <p class="kicker reveal">Product 01</p>
+      <h2 class="word accent reveal" style="--d:.05s">WEDGE</h2>
+      <p class="line reveal" style="--d:.12s">Seat Gap Filler.</p>
+      <p class="sub reveal" style="--d:.18s">One divider in the gap. Everything stops falling out of your pockets.</p>
+      <ul class="specs reveal" style="--d:.24s">
+        <li><span>410 &times; 60 &times; 35 mm</span> parametric, tapers to 22 mm</li>
+        <li><span>PETG or ASA</span> &mdash; PLA softens in a hot parked car</li>
+        <li><span>Splits in two</span> for 220 mm beds, alignment pins included</li>
+      </ul>
+      <p class="status reveal" style="--d:.30s"><span class="dot" aria-hidden="true"></span>STL in development &middot; OpenSCAD source public now</p>
+      <p class="reveal" style="--d:.34s"><a class="btn" href="https://github.com/YEAHDOGS/printshop">Open the source</a></p>
+    </div>
+  </section>
+
+  <!-- 04 SIZED -->
+  <section class="panel sized" aria-label="Live parametric demo">
+    <div class="copy corner-br">
+      <p class="kicker reveal">Live demo</p>
+      <h2 class="word reveal" style="--d:.05s">SIZED</h2>
+      <p class="line reveal" style="--d:.12s">One file. Your exact gap.</p>
+    </div>
+    <div class="demo reveal" style="--d:.2s">
+      <svg id="wedge-live" viewBox="0 0 460 300" role="img" aria-label="Wedge preview that responds to the sliders">
+        <g id="wedge-live-body" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path id="live-top" d=""/>
+          <path id="live-side" d="" opacity="0.35"/>
+          <path id="live-mid" d="" opacity="0.5"/>
+        </g>
+        <g font-family="ui-monospace, monospace" font-size="14" fill="currentColor">
+          <text id="live-len-label" x="230" y="282" text-anchor="middle"></text>
+          <text id="live-w-label" x="0" y="0" text-anchor="end"></text>
+        </g>
+      </svg>
+      <div class="ctls">
+        <div class="ctl"><label for="s-len">Length</label><input type="range" id="s-len" min="300" max="480" step="5" value="410"><output id="o-len" for="s-len">410 mm</output></div>
+        <div class="ctl"><label for="s-wid">Width</label><input type="range" id="s-wid" min="40" max="100" step="2" value="60"><output id="o-wid" for="s-wid">60 mm</output></div>
+        <div class="ctl"><label for="s-ht">Height</label><input type="range" id="s-ht" min="25" max="60" step="1" value="35"><output id="o-ht" for="s-ht">35 mm</output></div>
+      </div>
+      <p class="bed-note" id="bed-note" hidden>Over 220 mm: the model splits into front and back halves with alignment pins.</p>
+    </div>
+  </section>
+
+  <!-- 05 FIT -->
+  <section class="panel fit" aria-label="Why a file, not foam">
+    <div class="bg parallax" aria-hidden="true">
+      <img src="assets/wedge-detail.jpg" alt="" loading="lazy">
+      <div class="scrim heavy"></div>
+    </div>
+    <div class="copy corner-bl">
+      <h2 class="word reveal">FIT</h2>
+      <p class="line reveal" style="--d:.12s">$10 foam wins on price and feel.</p>
+      <p class="line reveal" style="--d:.18s">The file wins on fit.</p>
+      <p class="sub reveal" style="--d:.24s">Foam is one-size-fits-most. Parametric is your exact car.</p>
+    </div>
+  </section>
+
+  <!-- 06 GO -->
+  <section class="panel go" aria-label="How it works">
+    <div class="bg parallax" aria-hidden="true">
+      <img src="assets/wedge-detail.jpg" alt="" loading="lazy">
+      <div class="scrim heavy"></div>
+    </div>
+    <div class="copy corner-tl">
+      <h2 class="word reveal">GO</h2>
+      <ol class="steps reveal" style="--d:.12s">
+        <li><span class="n">01</span> Pick the product.</li>
+        <li><span class="n">02</span> Dial your measurements.</li>
+        <li><span class="n">03</span> Print anywhere. No printer required.</li>
+      </ol>
+      <p class="sub reveal" style="--d:.18s">Your own printer, a library, a makerspace, a print service.</p>
+    </div>
+  </section>
+
+  <!-- 07 SOON -->
+  <section class="panel soon" aria-label="Get notified">
+    <div class="bg parallax" aria-hidden="true">
+      <img src="assets/hero-print.jpg" alt="" loading="lazy">
+      <div class="scrim heavy"></div>
+    </div>
+    <div class="copy corner-bl">
+      <h2 class="word reveal">SOON</h2>
+      <p class="line reveal" style="--d:.12s">The STL drops soon.</p>
+      <form class="wait reveal" style="--d:.18s" id="waitform" novalidate>
+        <label class="sr" for="wait-email">Email</label>
+        <input type="email" id="wait-email" name="email" placeholder="you@somewhere.com" autocomplete="email" required>
+        <button class="btn" type="submit">Notify me</button>
+      </form>
+      <p class="wait-ok" id="wait-ok" hidden>Saved on this device. No spam, no tracking.</p>
+      <p class="sub small reveal" style="--d:.22s">Watch the <a href="https://github.com/YEAHDOGS/printshop">GitHub repo</a> for the drop.</p>
+      <footer class="foot reveal" style="--d:.28s">
+        <p class="foot-note">No cookies. No trackers. Just the page.</p>
+        <a class="badge" href="https://wearedogs.net" aria-label="This product was made by DOGS">
+          <img src="assets/made-by-dogs.png" alt="This product was made by DOGS" width="3584" height="1184" loading="lazy">
+        </a>
+      </footer>
+    </div>
+  </section>
+
+</main>
+
+<script src="app.js" defer></script>
+</body>
+</html>
